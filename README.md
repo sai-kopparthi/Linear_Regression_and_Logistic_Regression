@@ -2,18 +2,22 @@
 
 This Project is an implementation of Logistic Regression model and Linear Regression model that is able to make such predictions for given data point. I used gradient Descent optimization techniques for doing so.
 
-So, X will have n rows and m columns. (n X m dimensional vector) and Y will have 1 row and m columns (1 X m dimensional vector).
+Let’s say we have n dimensional of input feature. A single training example will be represented as (x,y) where x is n dimensional feature vector and y is label (0/1, True/False etc.). m denotes the total number of training examples. So, X will have n rows and m columns. (n X m dimensional vector) and Y will have 1 row and m columns (1 X m dimensional vector).
 The problem statement formulations turn out to be given X, we need to calculate ŷ = P( y=1 | X). What this means is that we need to calculate the probability of target variable to be 1 (or 0) given the training set X.
 To solve the problem using logistic regression we take two parameters w, which is n dimensional vector and b which is a real number.
 
 The logistic regression model to solve this is :
 Equation for Logistic Regression
+
 ![image](https://miro.medium.com/max/520/1*xDjD0feFXCHkhgqMHYFvrg.png)
 
 I applied sigmoid function so that I contain the result of ŷ between 0 and 1 (probability value). The sigmoid function definition is as follows:
+
 ![image](https://miro.medium.com/max/491/1*qJRi0QyZQAzcjRPI5zem-A.png)
 Sigmoid function
+
 When implementing logistic regression, our job is to learn parameters w and b so that ŷ is approximately equal to the test target . To learn the parameters w and b, we need to define a cost function which we would use to train the logistic regression model. A cost function is an estimator of how good or bad our model is in predicting the known output in general. But before that let us understand what a loss (error) function is. Simply putting it in a mathematical form, what we really want is:
+![image](https://miro.medium.com/max/1078/1*WQsr-Mo1nQKysOjyh5T6Ug.png)
 
 Loss Function could be defined as
 
