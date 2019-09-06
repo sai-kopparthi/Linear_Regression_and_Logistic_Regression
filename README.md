@@ -37,3 +37,4 @@ Basically, the cost function measures how well our parameters w and b are doing 
 In real examples, w can be a much higher dimension. J(w,b) becomes a surface as shown above for various values of w and b. What we really want is to find w and b where the value of cost function is minimum (shown by the red arrow).
 In the upcoming article (Part -2), we would go further to understand how gradient descent actually works and understand the mathematics to solve w and b.
 
+--Credit [Here](https://medium.com/technology-nineleaps/logistic-regression-gradient-descent-optimization-part-1-ed320325a67e)
